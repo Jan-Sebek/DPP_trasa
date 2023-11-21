@@ -68,14 +68,6 @@ void loadStops(map<string, Stop>& list, string name)
 }
 
 
-void nameSetup(map<string, Stop>& s_list, map<string, string>& n_list)
-{
-	for (pair<string, Stop> s : s_list)
-	{
-		n_list[s.second.getName()] = s.first;
-	}
-}
-
 void printOptions(map<string, Stop>& s_list, string part)
 {
 	for (pair<string, Stop> s : s_list)
