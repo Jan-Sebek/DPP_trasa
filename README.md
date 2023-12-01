@@ -3,6 +3,8 @@ An application that finds the shortest path between two stations that are part o
 
 This app needs the txt files form the "source_files.zip"
 
+Project file for visual studio 2019 is included but it is not required
+
 Alternative way to obtain these data is to download "PID_GTFS.zip" form "https://opendata.praha.eu/datasets/https%3A%2F%2Fapi.opendata.praha.eu%2Flod%2Fcatalog%2F9a6a1d8e-45b9-41de-b9ae-0bcec7126876"
 From "PID_GTFS.zip" files "route_stops.txt", "stop_times.txt" and "stops.txt" are needed.
 For the app to work properly all spaces within the txt files need to be replaced with underscores.
