@@ -39,6 +39,7 @@ int main()
 		if (y_n != 'y') { break; }
 		string start;
 		string finish;
+		zeroStations(stop_list);
 		while (true)
 		{
 			cout << "Enter part of starting station name: ";

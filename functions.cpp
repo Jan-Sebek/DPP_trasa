@@ -210,8 +210,8 @@ void findPath(map<string, Stop>& s_list, string start, string finish, list<Stop>
 		to_search.pop();
 		for (pair<string, int> neigh : tmp.neighbours)
 		{
-			if (s_list[neigh.first].visited) { continue; }
 			s_list[neigh.first].setDistance(s_list[start]);
+			if (s_list[neigh.first].getPathL() > 1.0e-12 && s_list[neigh.first].getPathL() < tmp.getPathL() + neigh.second && s_list[neigh.first].visited) { continue; }
 			s_list[neigh.first].setPathL(tmp.getPathL() + neigh.second);
 			s_list[neigh.first].previous = tmp.getCode();
 			s_list[neigh.first].visited = true;
@@ -220,4 +220,13 @@ void findPath(map<string, Stop>& s_list, string start, string finish, list<Stop>
 
 	}
 
+}
+
+void zeroStations(map<string, Stop>& s_list)
+{
+	for (pair<string, Stop> stop : s_list)
+	{
+		s_list[stop.first].setDistance(stop.second);
+		s_list[stop.first].setPathL(0);
+	}
 }

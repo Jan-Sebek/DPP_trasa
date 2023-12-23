@@ -29,7 +29,7 @@ public:
 	float getLongtitude();
 	string getName();
 	void setDistance(Stop s);
-	double getDistance(Stop s);
+	double getDistance();
 	void setPathL(double l);
 	int getPathL();
 

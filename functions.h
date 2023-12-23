@@ -32,5 +32,7 @@ int convertTime(string s_time);
 // and an empty path and fills the path with the shortest path from start to destination
 void findPath(map<string, Stop>& s_list, string start, string finish, list<Stop>& path);
 
+void zeroStations(map<string, Stop>& s_list);
+
 
 #endif

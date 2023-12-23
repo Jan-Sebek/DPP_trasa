@@ -12,15 +12,15 @@ using namespace std;
 
 Stop::Stop()
 {
-	string m_code = "";
-	string m_name = "";
-	int m_sameStop = 0;
-	float m_lat = 0.0;
-	float m_long = 0.0;
-	int m_path_len = 0;
-	double m_distance = 0;
-	double h = 0.0;
-	bool visited = false;
+	m_code = "";
+	m_name = "";
+	m_sameStop = 0;
+	m_lat = 0.0;
+	m_long = 0.0;
+	m_path_len = 0;
+	m_distance = 0;
+	h = 0.0;
+	visited = false;
 	string previous = "";
 }
 
@@ -142,7 +142,7 @@ void Stop::setDistance(Stop s)
 	h = m_distance + m_path_len;
 }
 
-double Stop::getDistance(Stop s)
+double Stop::getDistance()
 {
 	return m_distance;
 }
